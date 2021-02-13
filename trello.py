@@ -3,12 +3,12 @@ import json
 import sys
 
 auth_params = {    
-    'key': "bcda680e815b1edb071efbc7520a264c",    
-    'token': "bdf01b18ec51d8b66d3c7d42e6dc6f6f88d5d4e73cb732a13a4c15e74f8f5a78", 
-    }  
+    'key': "Enter your key !!!",    
+    'token': "Enter your token !!!", }  
   
 base_url = "https://api.trello.com/1/{}" 
-board_id = "5ef0eb3a06c4957eae939363"
+board_id="Enter your board_id"
+
 column_data = requests.get(base_url.format('boards') + '/' + board_id + '/lists', params=auth_params).json()
 
 def read():
